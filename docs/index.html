@@ -159,6 +159,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/WikiParserRules/Inline/wikilink</li>
+
 <li>$:/core</li>
 
 <li>$:/core/images/advanced-search-button</li>
@@ -225,11 +227,17 @@ Error message and password prompt
 
 <li>$:/state/FABs</li>
 
+<li>$:/state/header-searchbar</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--1963855381</li>
+
+<li>$:/state/tab--2112689675</li>
+
+<li>$:/state/tab--959111941</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -244,6 +252,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/advancedsearch</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -295,7 +305,7 @@ Error message and password prompt
 
 <li>Party</li>
 
-<li>Session Journal</li>
+<li>Sessions</li>
 
 <li>T1m</li>
 
@@ -354,6 +364,9 @@ Things Happened!</pre>
 </div>
 <div created="20200615205826802" modified="20200615205826802" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div created="20200615225449393" modified="20200615225449393" title="$:/config/WikiParserRules/Inline/wikilink">
+<pre>disable</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -10023,17 +10036,26 @@ Party</pre>
 <div created="20200615205507994" modified="20200615205922774" title="$:/state/FABs">
 <pre>no</pre>
 </div>
-<div created="20200615153926714" modified="20200615210458797" title="$:/state/showeditpreview">
+<div created="20200615224912959" modified="20200615224950712" title="$:/state/header-searchbar">
+<pre>close</pre>
+</div>
+<div created="20200615153926714" modified="20200615225049920" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200615191346548" modified="20200615203426028" title="$:/state/sidebar">
+<div created="20200615191346548" modified="20200615224950712" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200615191407238" modified="20200615191431836" title="$:/state/tab--1963855381">
 <pre>$:/themes/jd/Material/Tweaks</pre>
 </div>
-<div created="20200615145009975" modified="20200615203300557" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200615225426902" modified="20200615225426902" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Advanced</pre>
+</div>
+<div created="20200615225431578" modified="20200615225434639" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/EditorTypes</pre>
+</div>
+<div created="20200615145009975" modified="20200615225440208" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20200615184701534" modified="20200615184701534" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10050,7 +10072,10 @@ Party</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Session Journal]] Party" title="$:/StoryList">
+<div created="20200615231046387" list="Sessions [[2020-05-13 - Introductions]] Party" modified="20200615231051746" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20200615224914206" modified="20200615224950712" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10579,10 +10604,15 @@ She formed the party together with [[Dr. Stepan Ivanov]] and [[Virgil]] when the
 
 The [[Party]]'s first mission has primarily taken place here so far.</pre>
 </div>
-<div created="20200615210432728" modified="20200615213925364" title="Big 5">
+<div created="20200615210432728" modified="20200615225359470" title="Big 5">
 <pre>These entities are governments unto themselves with their own police forces and armies. With hundreds of millions of citizens each and intertwining webworks of business, the Big 5 have enclaves all over the system. Rivalries are rife and the Big 5 continuously fight among themselves.
 
-{{{ [tag[Big 5]sort[title]] }}}</pre>
+&lt;dl&gt;
+&lt;$list filter=&quot;[tag[Big 5]sort[title]]&quot;&gt;
+&lt;dt&gt;&lt;$link&gt;&lt;$view field=&quot;title&quot; /&gt;&lt;/$link&gt;&lt;/dt&gt;
+&lt;dd&gt;{{!!text}}&lt;/dd&gt;
+&lt;/$list&gt;
+&lt;/dl&gt;</pre>
 </div>
 <div created="20200615151201369" modified="20200615154658421" tags="[[Player Character]]" title="Dr. Stepan Ivanov">
 <pre>''Played by:'' Cue
@@ -10638,7 +10668,7 @@ He joined the party shortly after their arrival in [[Barsoom City]] where he bri
 
 [[T1m]] was recruited by Virgil after an encounter at the Barsoom City Scrapyard.</pre>
 </div>
-<div created="20200615162412459" modified="20200615213942064" tags="" title="Session Journal">
+<div created="20200615162412459" modified="20200615231348418" tags="" title="Sessions">
 <pre>&lt;&lt;list-links filter:&quot;[tag[Sessions]] +[sort[title]] -[is[system]]&quot;&gt;&gt;</pre>
 </div>
 <div created="20200615155740480" modified="20200615162333699" tags="[[Player Character]]" title="T1m">
