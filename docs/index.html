@@ -273,6 +273,8 @@ Error message and password prompt
 
 <li>Dr. Stepan Ivanov</li>
 
+<li>Draft of 'Session Journal'</li>
+
 <li>Hazard Group</li>
 
 <li>Mathias</li>
@@ -309,11 +311,15 @@ Error message and password prompt
 <div modified="20200615162128611" tags="Journal Sessions" title="$:/config/NewJournal/Tags">
 <pre></pre>
 </div>
-<div created="20200615162135264" modified="20200615164426548" title="$:/config/NewJournal/Text">
+<div created="20200615162135264" modified="20200615203303877" title="$:/config/NewJournal/Text">
 <pre>; Session number
 : n
 ; Players
 : Ace, Alan, Ben, Bonnie, Cue, Lukas
+; Previous Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[before&lt;currentTiddler&gt;]&quot; /&gt;
+; Next Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[after&lt;currentTiddler&gt;]&quot; emptyMessage=&quot;{{$:/core/ui/Buttons/new-journal}}&quot;/&gt;
 
 Things Happened!</pre>
 </div>
@@ -10000,14 +10006,14 @@ Party</pre>
 <div created="20200615153926714" modified="20200615174801186" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200615191346548" modified="20200615191404389" title="$:/state/sidebar">
+<div created="20200615191346548" modified="20200615203426028" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20200615191407238" modified="20200615191431836" title="$:/state/tab--1963855381">
 <pre>$:/themes/jd/Material/Tweaks</pre>
 </div>
-<div created="20200615145009975" modified="20200615191405870" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200615145009975" modified="20200615203300557" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200615184701534" modified="20200615184701534" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10018,13 +10024,13 @@ Party</pre>
 <div created="20200615160727686" modified="20200615174326924" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20200615191256303" modified="20200615191256303" title="$:/state/tab/sidebar-1845994331">
+<div created="20200615191256303" modified="20200615201749897" title="$:/state/tab/sidebar-1845994331">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200615191400070" list="$:/ControlPanel [[Session Journal]] Party" modified="20200615191400070" title="$:/StoryList">
+<div created="20200615203325585" list="[[Session Journal]] [[2020-06-10 - GG, EZ]] Party" modified="20200615203325585" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10211,7 +10217,7 @@ Party</pre>
     }
 }</pre>
 </div>
-<div created="20180327133017293" creator="jd" modified="20200615191601255" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
+<div created="20180327133017293" creator="jd" modified="20200615203426028" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
 <pre>{
     &quot;fabmargin&quot;: &quot;5px&quot;,
     &quot;fabsize&quot;: &quot;56px&quot;,
@@ -10467,11 +10473,13 @@ Party</pre>
     }
 }</pre>
 </div>
-<div created="20200615163206439" modified="20200615164451013" tags="Journal Sessions" title="2020-05-13 - Introductions">
+<div created="20200615163206439" modified="20200615203210680" tags="Journal Sessions" title="2020-05-13 - Introductions">
 <pre>; Session number
 : 1
 ; Players
 : Bonnie, Cue, Lukas
+; Next Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[after&lt;currentTiddler&gt;]&quot; emptyMessage=&quot;{{$:/core/ui/Buttons/new-journal}}&quot;/&gt;
 
 [[Anisa]], [[Stepan|Dr. Stepan Ivanov]] and [[Virgil]] all arrived on [[New Caledonia]] on the same shuttle. They had some time to get to know each other and knew they were all heading to the same meeting with [[Mrs. X]] of the [[Hazard Group]].
 
@@ -10479,11 +10487,16 @@ On their way to that meeting, they witnessed what looked like a kidnapping in th
 
 As it turned out, the kidnapping victim seemed to be affiliated with the Hazard Group in some way. Mrs. X congratulated the [[Party]] on their effective handling of the situation and extended an offer to join their organization as all-round troubleshooters. The party accepted and, after receiving a mission to investigate a new religion on Mars, headed to their new shuttle.</pre>
 </div>
-<div created="20200615164627416" modified="20200615170729060" tags="Journal Sessions" title="2020-05-20 - Accounting Sleuths">
+<div created="20200615164627416" modified="20200615203152394" tags="Journal Sessions" title="2020-05-20 - Accounting Sleuths">
 <pre>; Session number
 : 2
 ; Players
 : Ace, Alan, Bonnie, Cue, Lukas
+; Previous Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[before&lt;currentTiddler&gt;]&quot; /&gt;
+; Next Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[after&lt;currentTiddler&gt;]&quot; emptyMessage=&quot;{{$:/core/ui/Buttons/new-journal}}&quot;/&gt;
+
 
 [[Anisa]], [[Stepan|Dr. Stepan Ivanov]] and [[Virgil]] entered the shuttle provided by the [[Hazard Group]] where they met [[Z-Bot]], who would act as the shuttles pilot. After a quick tour of the shuttle, they headed off to [[Barsoom City]], Mars.
 
@@ -10495,11 +10508,15 @@ Z-Bot arranged for Anisa and Stepan to have a meeting with said firm, in which t
 
 The party decided to investigate the curch in the city next.</pre>
 </div>
-<div created="20200615170308481" modified="20200615172407941" tags="Journal Sessions" title="2020-06-03 - This is fine.">
+<div created="20200615170308481" modified="20200615203228153" tags="Journal Sessions" title="2020-06-03 - This is fine.">
 <pre>; Session number
 : 3
 ; Players
 : Alan, Ben, Bonnie, Cue, Lukas
+; Previous Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[before&lt;currentTiddler&gt;]&quot; /&gt;
+; Next Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[after&lt;currentTiddler&gt;]&quot; emptyMessage=&quot;{{$:/core/ui/Buttons/new-journal}}&quot;/&gt;
 
 The [[Party]] headed to where the church is basing their operations in [[Barsoom City]]. After an initial survey of the location, they decided to rent the empty lot across the street from it. In order to improve the cover story, [[Virgil]] decided to start building some equipent for their supposed High-G training gym, so he headed to a scrapyard to pick up some material. There he encountered [[T1m]] who was at the time employed by the scrapyard. After a minor mishap while picking out parts, T1m was fired from the scrapyard and Virgil suggested he could help him move the parts back to where the rest of the party were waiting. Virgil then suggested that T1m be added to their group.
 
@@ -10509,11 +10526,15 @@ After some deliberation, it was decided that [[Mathias]] and [[Virgil]] woould b
 
 After lying low for a little while, they both made their way back to the rest of the party.</pre>
 </div>
-<div created="20200615172412767" modified="20200615174218662" tags="Journal Sessions" title="2020-06-10 - GG, EZ">
+<div created="20200615172412767" modified="20200615203236575" tags="Journal Sessions" title="2020-06-10 - GG, EZ">
 <pre>; Session number
 : 4
 ; Players
 : Ace, Alan, Ben, Bonnie, Lukas
+; Previous Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[before&lt;currentTiddler&gt;]&quot; /&gt;
+; Next Session
+: &lt;$list filter=&quot;[tag[Sessions]] +[sort[title]] -[is[system]] +[after&lt;currentTiddler&gt;]&quot; emptyMessage=&quot;{{$:/core/ui/Buttons/new-journal}}&quot;/&gt;
 
 After the fiasco from last time, the party spent some time deliberating what their next move should be. They still didn't really want to send anyone into a service of the church for fear of brainwashing, so infiltration still seemed like the best approach. To avoid another disaster, this time they decided to cause a distraction to keep off the guards and to go in with [[Z-Bot]] as reinforcements. [[Stepan|Dr. Stepan Ivanov]] was sadly inconvenienced due to some slushie-induced food poisoning.
 
@@ -10541,6 +10562,9 @@ The [[Party]]'s first mission has primarily taken place here so far.</pre>
 Dr. Stepan Ivanov is a Beneficient //Type// who //Focus//. This Biologist is addigted to slushies and assists the party with his up-beat attitude and helpful demeanour. 
 
 He formed the party together with [[Anisa]] and [[Virgil]] when they met in the hangar bay on [[New Caledonia]] and joined the [[Hazard Group]].</pre>
+</div>
+<div created="20200615162412459" draft.of="Session Journal" draft.title="Session Journal" modified="20200615200438725" tags="" title="Draft of 'Session Journal'">
+<pre>&lt;&lt;list-links filter:&quot;[tag[Sessions]] +[sort[title]] -[is[system]]&quot;&gt;&gt;</pre>
 </div>
 <div created="20200615174651424" modified="20200615174902184" tags="Organizations" title="Hazard Group">
 <pre>A small company with the backing of some heavy hitters. Current employer of the [[Party]]
