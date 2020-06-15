@@ -149,6 +149,12 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Title</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
 <li>$:/core</li>
@@ -217,6 +223,10 @@ Error message and password prompt
 
 <li>$:/state/showeditpreview</li>
 
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1963855381</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
@@ -224,6 +234,8 @@ Error message and password prompt
 <li>$:/state/tab/moresidebar-1850697562</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/tab/sidebar-1845994331</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
@@ -307,6 +319,15 @@ Things Happened!</pre>
 </div>
 <div created="20200615162807900" modified="20200615163200271" title="$:/config/NewJournal/Title">
 <pre>YYYY-0MM-0DD</pre>
+</div>
+<div created="20200615191301098" modified="20200615191304662" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
+<pre>hide</pre>
+</div>
+<div created="20200615191258017" modified="20200615191258017" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
+<div created="20200615191330576" modified="20200615191330576" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<pre>show</pre>
 </div>
 <div created="20200615163109353" modified="20200615163109353" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>show</pre>
@@ -9905,8 +9926,8 @@ Party</pre>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20180324092022797" creator="jd" modified="20200615190101581" modifier="jd" title="$:/palette">
-<pre>$:/themes/jd/Material/Palette/MaterialDarkBase</pre>
+<div created="20180324092022797" creator="jd" modified="20200615191601253" modifier="jd" title="$:/palette">
+<pre>$:/themes/jd/Material/Palette/MaterialLightBase</pre>
 </div>
 <div author="Simon Huber" core-version="&gt;=5.0.0" dependents="" description="Swipe, Pan, Press, Tap and Pinch Widgets" list="" plugin-type="plugin" title="$:/plugins/BurningTree/hammerwidgets" type="application/json" version="0.1.0">
 <pre>{
@@ -9979,8 +10000,14 @@ Party</pre>
 <div created="20200615153926714" modified="20200615174801186" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200615145009975" modified="20200615184653557" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20200615191346548" modified="20200615191404389" title="$:/state/sidebar">
+<pre>no</pre>
+</div>
+<div created="20200615191407238" modified="20200615191431836" title="$:/state/tab--1963855381">
+<pre>$:/themes/jd/Material/Tweaks</pre>
+</div>
+<div created="20200615145009975" modified="20200615191405870" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20200615184701534" modified="20200615184701534" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -9991,10 +10018,13 @@ Party</pre>
 <div created="20200615160727686" modified="20200615174326924" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<div created="20200615191256303" modified="20200615191256303" title="$:/state/tab/sidebar-1845994331">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20200615190507447" list="$:/Import [[Session Journal]] Party" modified="20200615190507447" title="$:/StoryList">
+<div title="$:/status/RequireReloadDueToPluginChange">
+<pre>no</pre>
+</div>
+<div created="20200615191400070" list="$:/ControlPanel [[Session Journal]] Party" modified="20200615191400070" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10181,7 +10211,7 @@ Party</pre>
     }
 }</pre>
 </div>
-<div created="20180327133017293" creator="jd" modified="20200615190101582" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
+<div created="20180327133017293" creator="jd" modified="20200615191601255" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
 <pre>{
     &quot;fabmargin&quot;: &quot;5px&quot;,
     &quot;fabsize&quot;: &quot;56px&quot;,
@@ -10195,11 +10225,11 @@ Party</pre>
     &quot;fab6&quot;: &quot;&quot;,
     &quot;headerbtns&quot;: &quot;4&quot;,
     &quot;icon&quot;: &quot;{{$:/core/images/menu-button}}&quot;,
-    &quot;statelists&quot;: &quot;yes&quot;,
+    &quot;statelists&quot;: &quot;no&quot;,
     &quot;mobilepopups&quot;: &quot;yes&quot;,
     &quot;outlinenone&quot;: &quot;no&quot;,
     &quot;fabiconsize&quot;: &quot;26px&quot;,
-    &quot;listsdefon&quot;: &quot;yes&quot;,
+    &quot;listsdefon&quot;: &quot;no&quot;,
     &quot;color-primary&quot;: &quot;#004d40&quot;,
     &quot;color-sidebar-tab-background&quot;: &quot;#39796b&quot;,
     &quot;color-button-background&quot;: &quot;#9e9e9e&quot;,
