@@ -157,6 +157,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/core/images/advanced-search-button</li>
@@ -221,6 +223,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/FABs</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/sidebar</li>
@@ -267,15 +271,23 @@ Error message and password prompt
 
 <li>2020-06-10 - GG, EZ</li>
 
+<li>Alpha Corp</li>
+
 <li>Anisa</li>
 
 <li>Barsoom City</li>
 
+<li>Big 5</li>
+
 <li>Dr. Stepan Ivanov</li>
 
-<li>Draft of 'Session Journal'</li>
+<li>ExaCorp Unlimited</li>
 
 <li>Hazard Group</li>
+
+<li>Korporatsiya Interesov Lyudey</li>
+
+<li>Lau-Naga-Xi Development</li>
 
 <li>Mathias</li>
 
@@ -286,6 +298,8 @@ Error message and password prompt
 <li>Session Journal</li>
 
 <li>T1m</li>
+
+<li>TeraCom</li>
 
 <li>Virgil</li>
 
@@ -337,6 +351,9 @@ Things Happened!</pre>
 </div>
 <div created="20200615163109353" modified="20200615163109353" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>show</pre>
+</div>
+<div created="20200615205826802" modified="20200615205826802" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -10003,7 +10020,10 @@ Party</pre>
 <div created="20200615144640696" modified="20200615144645423" title="$:/SiteTitle">
 <pre>Hazard Group Campaign</pre>
 </div>
-<div created="20200615153926714" modified="20200615174801186" title="$:/state/showeditpreview">
+<div created="20200615205507994" modified="20200615205922774" title="$:/state/FABs">
+<pre>no</pre>
+</div>
+<div created="20200615153926714" modified="20200615210458797" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20200615191346548" modified="20200615203426028" title="$:/state/sidebar">
@@ -10030,7 +10050,7 @@ Party</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200615203325585" list="[[Session Journal]] [[2020-06-10 - GG, EZ]] Party" modified="20200615203325585" title="$:/StoryList">
+<div list="[[Session Journal]] Party" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10091,7 +10111,7 @@ Party</pre>
     }
 }</pre>
 </div>
-<div created="20200615145450307" modified="20200615174957541" title="$:/temp/NewTagName">
+<div created="20200615145450307" modified="20200615205526139" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20180329154930300" creator="jd" modified="20180329155130924" modifier="jd" title="$:/theme">
@@ -10544,6 +10564,9 @@ The distraction proved very effective, especially after Anisa decided to take on
 
 Thanks to their amazing hacking skills, the two cyber-sleuths were able to extract all that they were looking for and more. They extracted a list of donors to the church and found out that most people would donate a few times, with the last donation always being a very large sum and then the donations would stop. Some later cross-referencing would reveal that all the people with that donation pattern were reported missing around the same time as the last donation took place. In addition to that, Mathias and and Z-Bot were also able to steal a dormant military AI.</pre>
 </div>
+<div created="20200615205508001" modified="20200615205557644" tags="Organizations [[Big 5]]" title="Alpha Corp">
+<pre>Mining, mining, mining.  Minerals, gas, plasma.  Alpha Corp mines it all with a blithe disregard for the rights (of life) of anyone in the way.  Currently focused on Venus and Mercury, and Uranus (for gas), Alpha Corp has tried to push into the asteroid belt several times, only to be repulsed by the miners. It’s rumored that Alpha Corp is now looking at establishing operations in the Kuiper belt.</pre>
+</div>
 <div created="20200615145849865" modified="20200615151117928" tags="[[Player Character]]" title="Anisa">
 <pre>''Played by:'' Bonnie
 
@@ -10556,6 +10579,11 @@ She formed the party together with [[Dr. Stepan Ivanov]] and [[Virgil]] when the
 
 The [[Party]]'s first mission has primarily taken place here so far.</pre>
 </div>
+<div created="20200615210432728" modified="20200615213925364" title="Big 5">
+<pre>These entities are governments unto themselves with their own police forces and armies. With hundreds of millions of citizens each and intertwining webworks of business, the Big 5 have enclaves all over the system. Rivalries are rife and the Big 5 continuously fight among themselves.
+
+{{{ [tag[Big 5]sort[title]] }}}</pre>
+</div>
 <div created="20200615151201369" modified="20200615154658421" tags="[[Player Character]]" title="Dr. Stepan Ivanov">
 <pre>''Played by:'' Cue
 
@@ -10563,8 +10591,8 @@ Dr. Stepan Ivanov is a Beneficient //Type// who //Focus//. This Biologist is add
 
 He formed the party together with [[Anisa]] and [[Virgil]] when they met in the hangar bay on [[New Caledonia]] and joined the [[Hazard Group]].</pre>
 </div>
-<div created="20200615162412459" draft.of="Session Journal" draft.title="Session Journal" modified="20200615200438725" tags="" title="Draft of 'Session Journal'">
-<pre>&lt;&lt;list-links filter:&quot;[tag[Sessions]] +[sort[title]] -[is[system]]&quot;&gt;&gt;</pre>
+<div created="20200615205922776" modified="20200615210122299" tags="[[Big 5]] Organizations" title="ExaCorp Unlimited">
+<pre>ExaCorp Unlimited pursues technology at all costs. Drive systems, weapons, ships. Rumors are that they secretly sponsored the pirate attack from Iapetus although there was no evidence. It’s hard to do forensic accounting on a molten ball…</pre>
 </div>
 <div created="20200615174651424" modified="20200615174902184" tags="Organizations" title="Hazard Group">
 <pre>A small company with the backing of some heavy hitters. Current employer of the [[Party]]
@@ -10580,6 +10608,12 @@ Your records speak well of yourselves.  Will you accept a position with the Haza
 - [[Mrs. X]]
 &lt;&lt;&lt;
 </pre>
+</div>
+<div created="20200615205612672" modified="20200615205652567" tags="Organizations [[Big 5]]" title="Korporatsiya Interesov Lyudey">
+<pre>Korporatsiya Interesov Lyudey (usually just called KL) see themselves as the guardians of pure humanity and frown on cybernetic or biotech modifications.  Any citizen of KL who gets modified usually disappears fairly quickly, only to be found sans-modifications in a re-education camp.</pre>
+</div>
+<div created="20200615205655201" modified="20200615205827982" tags="[[Big 5]] Organizations" title="Lau-Naga-Xi Development">
+<pre>Lau-Naga-Xi Development is the diametric opposite of [[KL|Korporatsiya Interesov Lyudey]]. LNX has embraced alien technology and is the system leader in biotech. They create synthetic lifeforms, genetically modified food and seeds to sell throughout the system. Skirmishes with KL happen frequently if the two corps find themselves out of sight of others, or at least with an acceptable number of witnesses to get rid of afterwards. It’s rumored that LNX has been able to merge alien biology with human…</pre>
 </div>
 <div created="20200615154953800" modified="20200615163305309" tags="[[Player Character]]" title="Mathias">
 <pre>''Played by:'' Alan
@@ -10604,7 +10638,7 @@ He joined the party shortly after their arrival in [[Barsoom City]] where he bri
 
 [[T1m]] was recruited by Virgil after an encounter at the Barsoom City Scrapyard.</pre>
 </div>
-<div created="20200615162412459" modified="20200615163055437" tags="" title="Session Journal">
+<div created="20200615162412459" modified="20200615213942064" tags="" title="Session Journal">
 <pre>&lt;&lt;list-links filter:&quot;[tag[Sessions]] +[sort[title]] -[is[system]]&quot;&gt;&gt;</pre>
 </div>
 <div created="20200615155740480" modified="20200615162333699" tags="[[Player Character]]" title="T1m">
@@ -10613,6 +10647,9 @@ He joined the party shortly after their arrival in [[Barsoom City]] where he bri
 T1m, or T1 Mechanized Lifting Unit, is a Hardy Warrior who Abides in Steel. This massive industrial robot was granted sentience by a strong AI. He adds his considerable might and sturdiness to the party.
 
 T1m joined the party after their investigation of the accountants firm when [[Virgil]] was buying some scrap at the [[Barsoom City]] Scrapyard.</pre>
+</div>
+<div created="20200615205835477" modified="20200615205912576" tags="Organizations [[Big 5]]" title="TeraCom">
+<pre>TeraCom was founded before the Diaspora. TeraCom is rumored to send expeditions to Earth to try and reclaim tech.  They focus on computer hardware and software development including Weak AI, Wetware, and synthetic personalities.  TeraCom make the finest robot chassis in the system.</pre>
 </div>
 <div created="20200615145423835" modified="20200615151148606" tags="[[Player Character]]" title="Virgil">
 <pre>''Played by:'' Lukas
