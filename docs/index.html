@@ -153,11 +153,15 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/RelinkOnRename</li>
 
@@ -293,8 +297,6 @@ Error message and password prompt
 
 <li>Dr. Stepan Ivanov</li>
 
-<li>Draft of '$:/themes/jd/Material/Template/Header-Sidebar'</li>
-
 <li>ExaCorp Unlimited</li>
 
 <li>Hazard Group</li>
@@ -360,14 +362,20 @@ Things Happened!</pre>
 <div created="20200615191301098" modified="20200615191304662" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
 <pre>hide</pre>
 </div>
+<div created="20200615235841656" modified="20200615235948703" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
+<pre>hide</pre>
+</div>
 <div created="20200615191258017" modified="20200615191258017" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
 <div created="20200615191330576" modified="20200615191330576" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
 </div>
-<div created="20200615163109353" modified="20200615163109353" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
-<pre>show</pre>
+<div created="20200615163109353" modified="20200615235802584" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<pre>hide</pre>
+</div>
+<div created="20200615235801730" modified="20200615235801730" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<pre>hide</pre>
 </div>
 <div created="20200615205826802" modified="20200615205826802" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
@@ -10044,14 +10052,14 @@ Party</pre>
 <div created="20200615205507994" modified="20200615205922774" title="$:/state/FABs">
 <pre>no</pre>
 </div>
-<div created="20200615224912959" modified="20200615224950712" title="$:/state/header-searchbar">
+<div created="20200615224912959" modified="20200615235935708" title="$:/state/header-searchbar">
 <pre>close</pre>
 </div>
 <div created="20200615153926714" modified="20200615225049920" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200615191346548" modified="20200615235122059" title="$:/state/sidebar">
-<pre>no</pre>
+<div created="20200615191346548" modified="20200615235935708" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
 <div created="20200615191407238" modified="20200615191431836" title="$:/state/tab--1963855381">
 <pre>$:/themes/jd/Material/Tweaks</pre>
@@ -10074,16 +10082,16 @@ Party</pre>
 <div created="20200615160727686" modified="20200615174326924" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20200615191256303" modified="20200615201749897" title="$:/state/tab/sidebar-1845994331">
+<div created="20200615191256303" modified="20200615235853498" title="$:/state/tab/sidebar-1845994331">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[2020-06-10 - GG, EZ]] Sessions Party" title="$:/StoryList">
+<div created="20200615235658341" list="[[2020-06-10 - GG, EZ]] Sessions Party" modified="20200615235942346" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20200615224914206" modified="20200615224950712" title="$:/temp/advancedsearch">
+<div created="20200615224914206" modified="20200615235935708" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10270,7 +10278,7 @@ Party</pre>
     }
 }</pre>
 </div>
-<div created="20180327133017293" creator="jd" modified="20200615235122058" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
+<div created="20180327133017293" creator="jd" modified="20200615235752897" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
 <pre>{
     &quot;fabmargin&quot;: &quot;5px&quot;,
     &quot;fabsize&quot;: &quot;56px&quot;,
@@ -10284,7 +10292,7 @@ Party</pre>
     &quot;fab6&quot;: &quot;&quot;,
     &quot;headerbtns&quot;: &quot;4&quot;,
     &quot;icon&quot;: &quot;{{$:/core/images/menu-button}}&quot;,
-    &quot;statelists&quot;: &quot;no&quot;,
+    &quot;statelists&quot;: &quot;yes&quot;,
     &quot;mobilepopups&quot;: &quot;yes&quot;,
     &quot;outlinenone&quot;: &quot;no&quot;,
     &quot;fabiconsize&quot;: &quot;26px&quot;,
@@ -10628,119 +10636,6 @@ The [[Party]]'s first mission has primarily taken place here so far.</pre>
 Dr. Stepan Ivanov is a Beneficient //Type// who //Focus//. This Biologist is addigted to slushies and assists the party with his up-beat attitude and helpful demeanour. 
 
 He formed the party together with [[Anisa]] and [[Virgil]] when they met in the hangar bay on [[New Caledonia]] and joined the [[Hazard Group]].</pre>
-</div>
-<div created="20180324031529092" creator="jd" draft.of="$:/themes/jd/Material/Template/Header-Sidebar" draft.title="$:/themes/jd/Material/Template/Header-Sidebar" modified="20200615235051499" modifier="jd" tags="$:/tags/PageTemplate" title="Draft of '$:/themes/jd/Material/Template/Header-Sidebar'">
-<pre>\define config-title() $:/config/PageControlButtons/Visibility/$(listItem)$
-&lt;div class=&quot;tc-adjust-top-of-scroll&quot; style=&quot;height: calc(56px + 42px);&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;header-back&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;header-wrapper&quot;&gt;
-&lt;div style=&quot;padding: 16px; width: 100%; display: flex; flex-direction: column; flex: 0 0 auto;&quot;&gt;
-&lt;$reveal state=&quot;$:/state/header-searchbar&quot; type=&quot;match&quot; text=&quot;close&quot; default=&quot;close&quot; animate=&quot;yes&quot; tag=&quot;div&quot; class=&quot;header-type-wrapper&quot;&gt;
-&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;nomatch&quot; text=&quot;no&quot; default={{$:/themes/jd/Material/ConfigDB##listsdefon}}&gt;
-&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class=&quot;tc-btn-invisible header-btn&quot; style=&quot;margin-right: 16px;&quot;&gt;
-&lt;$action-setfield $tiddler=&quot;$:/themes/jd/Material/ConfigDB&quot; $index=&quot;statelists&quot; $value=&quot;no&quot;/&gt;
-{{$:/themes/jd/Material/ConfigDB##icon}}
-&lt;/$button&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;no&quot; default={{$:/themes/jd/Material/ConfigDB##listsdefon}}&gt;
-&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;yes&quot; tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class=&quot;tc-btn-invisible header-btn&quot; style=&quot;margin-right: 16px;&quot;&gt;
-&lt;$action-setfield $tiddler=&quot;$:/themes/jd/Material/ConfigDB&quot; $index=&quot;statelists&quot; $value=&quot;yes&quot;/&gt;
-{{$:/themes/jd/Material/ConfigDB##icon}}
-&lt;/$button&gt;
-&lt;/$reveal&gt;
-&lt;div class=&quot;header-title&quot;&gt;{{$:/SiteTitle}}&lt;/div&gt;
-&lt;div style=&quot;display: flex; justify-content: space-between; align-items: center;&quot;&gt;
-&lt;$list filter=&quot;[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]][[$:/themes/jd/Material/Buttons/advanced-search]][[$:/core/ui/Buttons/more-page-actions]]&quot; variable=&quot;listItem&quot;&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;config-title&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; style=&quot;margin-left: 16px;&quot;&gt;
-&lt;$set name=&quot;tv-config-toolbar-class&quot; value=&quot;tc-btn-invisible header-btn&quot;&gt;
-&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; mode=&quot;inline&quot;/&gt;
-&lt;/$set&gt;
-&lt;/$reveal&gt;
-&lt;/$list&gt;
-&lt;/div&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/state/header-searchbar&quot; type=&quot;match&quot; text=&quot;open&quot; default=&quot;close&quot; animate=&quot;yes&quot; tag=&quot;div&quot; class=&quot;header-type-wrapper&quot;&gt;
-&lt;div class=&quot;jd-search-header&quot;&gt;
-&lt;$keyboard tag=&quot;div&quot; class=&quot;jd-search-bar&quot; key=&quot;escape&quot; actions=&quot;&quot;&quot;
-&lt;$action-setfield $tiddler=&quot;$:/temp/advancedsearch&quot; $field=&quot;text&quot; $value=&quot;&quot;/&gt;
-&lt;$action-setfield $tiddler=&quot;$:/state/header-searchbar&quot; text=&quot;close&quot;/&gt;
-&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text={{$:/themes/jd/Material/ConfigDB##statelists}}/&gt;
-&quot;&quot;&quot;&gt;
-&lt;$edit-text tiddler=&quot;$:/temp/advancedsearch&quot; type=&quot;search&quot; tag=&quot;input&quot; focus=&quot;yes&quot; placeholder=&quot;Search&quot; default=&quot;Search&quot;/&gt;
-&lt;/$keyboard&gt;
-&lt;$list filter=&quot;[[$:/temp/advancedsearch]!text[]]&quot; variable=&quot;stateCheck&quot;&gt;
-&lt;div class=&quot;jd-search-body&quot;&gt;
-&lt;$list filter=&quot;[{$:/temp/advancedsearch}minlength{$:/config/Search/MinLength}limit[1]]&quot; emptyMessage=&quot;&quot;&quot;&lt;div style=&quot;padding: 16px 28px;&quot;&gt;
-{{$:/language/Search/Search/TooShort}}. Adjust minimum search length [[here|$:/config/Search/MinLength]]
-&lt;/div&gt;&quot;&quot;&quot; variable=&quot;listItem&quot;&gt;
-&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/AdvancedSearch]!has[draft.of]]&quot; default=&quot;$:/core/ui/AdvancedSearch/Standard&quot; state=&quot;$:/state/searchtab&quot;/&gt;
-&lt;/$list&gt;
-&lt;/div&gt;
-&lt;/$list&gt;
-&lt;div class=&quot;jd-search-buttons&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
-&lt;$action-setfield $tiddler=&quot;$:/temp/advancedsearch&quot; $field=&quot;text&quot; $value=&quot;&quot;/&gt;
-&lt;$action-setfield $tiddler=&quot;$:/state/header-searchbar&quot; text=&quot;close&quot;/&gt;
-&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text={{$:/themes/jd/Material/ConfigDB##statelists}}/&gt;
-{{$:/core/images/close-button}}
-&lt;/$button&gt;
-&lt;$set filter=&quot;[search:title[$:/state/searchtab-]!sort[modified]limit[1]]&quot; name=&quot;searchTabState&quot;&gt;
-&lt;$list filter=&quot;[&lt;searchTabState&gt;text[$:/core/ui/AdvancedSearch/Filter]]&quot; variable=&quot;stateCheck&quot;&gt;
-&lt;$list filter=&quot;[all[shadows+tiddlers]tag[$:/tags/AdvancedSearch/FilterButton]!has[draft.of]]-[[$:/core/ui/AdvancedSearch/Filter/FilterButtons/clear]]-[[$:/core/ui/AdvancedSearch/Filter/FilterButtons/dropdown]]&quot;&gt;&lt;$transclude/&gt;
-&lt;/$list&gt;
-&lt;/$list&gt;
-&lt;/$set&gt;
-{{$:/core/ui/AdvancedSearch/Filter/FilterButtons/dropdown}}
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/$reveal&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;nomatch&quot; text=&quot;no&quot; retain=&quot;yes&quot; animate=&quot;yes&quot; tag=&quot;div&quot; class=&quot;animated slideInLeft&quot; default={{$:/themes/jd/Material/ConfigDB##listsdefon}}&gt;
-&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]&quot; default={{$:/config/DefaultSidebarTab}} state=&quot;$:/state/tab/sidebar&quot; class=&quot;jd-lists-body&quot;/&gt;
-&lt;/$reveal&gt;
-&lt;$list filter=&quot;[[$:/plugins/tiddlywiki/hammerjs][$:/plugins/BurningTree/hammerwidgets]!is[missing]]&quot;&gt;
-&lt;$swipe class=&quot;jd-swipearea jd-swipearea-on&quot; velocity=&quot;0.5&quot; rightactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; $value=&quot;yes&quot;/&gt;&lt;$action-setfield $tiddler=&quot;$:/themes/jd/Material/ConfigDB&quot; $index=&quot;statelists&quot; $value=&quot;yes&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;/$swipe&gt;
-&lt;$swipe class=&quot;jd-swipearea jd-swipearea-off&quot; velocity=&quot;0.5&quot; leftactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; $value=&quot;no&quot;/&gt;&lt;$action-setfield $tiddler=&quot;$:/themes/jd/Material/ConfigDB&quot; $index=&quot;statelists&quot; $value=&quot;no&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;/$swipe&gt;
-&lt;/$list&gt;
-&lt;$set name=&quot;tv-config-toolbar-class&quot; value=&quot;tc-btn-invisible FABitem&quot;&gt;
-&lt;$list filter=&quot;[[$:/plugins/tiddlywiki/hammerjs][$:/plugins/BurningTree/hammerwidgets]!is[missing]]&quot; variable =&quot;checker&quot;&gt;
-&lt;$swipe class=&quot;FAB-wrapper&quot; velocity=&quot;0.1&quot; upactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/FABs&quot; $value=&quot;yes&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;$tap actions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/FABs&quot; $value=&quot;no&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;div class=&quot;FAB-wrapper&quot;&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab}}/&gt;
-&lt;/div&gt;
-&lt;/$tap&gt;
-&lt;/$swipe&gt;
-&lt;$reveal type=&quot;match&quot; state=&quot;$:/state/FABs&quot; text=&quot;yes&quot; animate=&quot;yes&quot; retain=&quot;yes&quot; tag=&quot;div&quot; class=&quot;animated slideInUp&quot;&gt;
-&lt;$swipe class=&quot;FABs-wrapper&quot; velocity=&quot;0.1&quot; downactions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/FABs&quot; $value=&quot;no&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;$tap actions=&quot;&quot;&quot;&lt;$action-setfield $tiddler=&quot;$:/state/FABs&quot; $value=&quot;no&quot;/&gt;&quot;&quot;&quot;&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab1}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab2}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab3}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab4}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab5}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab6}}/&gt;
-&lt;/$tap&gt;
-&lt;/$swipe&gt;
-&lt;/$reveal&gt;
-&lt;/$list&gt;
-&lt;$list filter=&quot;[[$:/plugins/tiddlywiki/hammerjs][$:/plugins/BurningTree/hammerwidgets]is[missing]]&quot; variable =&quot;checker&quot;&gt;
-&lt;div class=&quot;FAB-wrapper&quot;&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab}}/&gt;
-&lt;/div&gt;
-&lt;div class=&quot;FABs-wrapper&quot;&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab1}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab2}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab3}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab4}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab5}}/&gt;
-&lt;$transclude tiddler={{$:/themes/jd/Material/ConfigDB##fab6}}/&gt;
-&lt;/div&gt;
-&lt;/$list&gt;
-&lt;/$set&gt;</pre>
 </div>
 <div created="20200615205922776" modified="20200615210122299" tags="[[Big 5]] Organizations" title="ExaCorp Unlimited">
 <pre>ExaCorp Unlimited pursues technology at all costs. Drive systems, weapons, ships. Rumors are that they secretly sponsored the pirate attack from Iapetus although there was no evidence. It’s hard to do forensic accounting on a molten ball…</pre>
